@@ -9,33 +9,35 @@ import Documentation from './pages/Documentation';
 import Footer from './Component/Footer/Footer';
 import { Component } from 'react';
 
-// import Error404 from './pages/Errors/Error404';
+import ErrorBoundary from './Component/ErrorBoundary';
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
         {/* <Error404 /> */}
-        <Router>
-          <Navbar />
-          <div className="Body">
-            <Switch>
-              <Route path="/" exact>
-                <Home />
-              </Route>
-              <Route exact path="/Pokedex">
-                <Pokedex />
-              </Route>
-              <Route exact path="/Legendaries">
-                <Legendaries />
-              </Route>
-              <Route exact path="/Documentation">
-                <Documentation />
-              </Route>
-            </Switch>
-          </div>
-        </Router>
-        <Footer />
+        <ErrorBoundary>
+          <Router>
+            <Navbar />
+            <div className="Body">
+              <Switch>
+                <Route path="/" exact>
+                  <Home />
+                </Route>
+                <Route exact path="/Pokedex">
+                  <Pokedex />
+                </Route>
+                <Route exact path="/Legendaries">
+                  <Legendaries />
+                </Route>
+                <Route exact path="/Documentation">
+                  <Documentation />
+                </Route>
+              </Switch>
+            </div>
+          </Router>
+          <Footer />
+        </ErrorBoundary>
       </div>
     );
   }
