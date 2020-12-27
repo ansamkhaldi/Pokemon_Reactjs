@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+.grid-footer{
+    /* background-color: #F2B807; */
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+.grid-item-footer,
+.grid-item-footer2 {
+    margin-top: 10px;
+    text-align: start;
+    padding-left: 17%;
+}
+.grid-item-footer2{
+    padding-left: 45%;
+}

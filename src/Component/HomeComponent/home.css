@@ -1,0 +1,51 @@
+.homePage{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+    padding: 182px 0 150px 0;
+}
+.grid-item-home,
+.grid-item-image{
+    font-size: 30px;
+    text-align: left; 
+
+}
+.grid-item-home{
+margin-left: 24%;
+}
+.home-p1{
+margin-top: 18px;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 70px;
+letter-spacing: 3px;
+}
+.home-p1 span{
+    font-weight: 400;
+}
+.home-p2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
+.home-button{
+    Width:205px;
+Height:60px;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 35px;
+    background: #73D677;
+box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+border-radius: 6px;
+}
+.grid-item-image{
+ padding-left: 4%;
+}
+.grid-item-image img{ 
+    width: 100%;
+    height: 100%;
+}
