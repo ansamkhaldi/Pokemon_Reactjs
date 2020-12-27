@@ -6,6 +6,7 @@ import { VscLoading } from 'react-icons/vsc';
 import { useEffect, useReducer, useState } from 'react';
 import '../Component/PokemonsComponent/pokemons.css';
 import CardList from '../Component/PokemonsComponent/CardList';
+import Error404 from './Errors/Error404';
 
 const initialState = {
   Image: [],
@@ -68,7 +69,7 @@ export default function Pokedex(props) {
             />
           </div>
         )}
-        {!!error && <div className="errorDiv">somthing went wrong</div>}
+        {!!error && <Error404 />}
         {!loading && !error && (
           <>
             <CardList Image={searchResults} />
